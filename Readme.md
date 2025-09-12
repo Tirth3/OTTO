@@ -21,6 +21,14 @@ shishimanu
 | --nofullscreen | Run in windowed mode (default = fullscreen). |
 | --wsize | Window size in pixels (default 600). |
 | --wpos X Y | Window position on screen (default = 100 100). |
+| --HBD | for HBD (only for gadhedee) |
+
+## 📦 Dependencies
+Shishimanu is lightweight, depending only on a few Python packages:
+* pygame
+* setuptools (for packaging)
+Windows-only (optional, for transparent background):
+* pywin32 
 
 ## Roadmap
 - Add pet stats (hunger, fun, sleep, health).
@@ -44,5 +52,5 @@ pyinstaller --onefile --noconsole -n shishimanu shishimanu/main.py
   ```bash
   pip install pywin32
   ```
-* Warning about Scripts folder not in path :
-  * Follow the guide [here](https://github.com/Tirth3).
+* Warning about Scripts folder not in path (windows only) :
+  * Follow the guide [here](https://github.com/Tirth3/Shishimanu/blob/main/pathupdate.md).
